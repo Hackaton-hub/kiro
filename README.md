@@ -8,7 +8,7 @@ Les règles générales de l'équipe (branches, PR, rapports, statuts) sont dans
 | | |
 |---|---|
 | Responsable de la compétition | @Windyam-Juste-Yannel-BELEMSIGRI |
-| Validation des PR | @BHAR-226 |
+| Validation des PR | @Windyam-Juste-Yannel-BELEMSIGRI (le responsable de la compétition) |
 | Suivi des tâches | [Project « Compétitions »](https://github.com/orgs/Hackaton-hub/projects/1), filtre `Compétition:Kiro` |
 | Étiquette des issues | `kiro` |
 
