@@ -33,15 +33,15 @@ Three actions, identical on every surface (hook, CLI, MCP, web):
 | REVIEW | A human should look before installing. |
 | BLOCK | Do not install. |
 
-Each action carries a diagnosis:
+Each action carries a diagnosis (same codes as the `Diagnosis` type in `packages/core/src/types.ts`):
 
 | Diagnosis | Meaning |
 |---|---|
-| Alive | Healthy package. |
-| Ghost | The package does not exist. |
-| Possessed | It exists, but is probably not what the agent thinks. |
-| Cursed | Known vulnerability or malware. |
-| Fog | We could not verify it. Fog is never ALLOW. |
+| LIVING | Healthy package. |
+| GHOST | The package does not exist. |
+| POSSESSED | It exists, but is probably not what the agent thinks. |
+| CURSED | Known vulnerability or malware. |
+| FOG | We could not verify it. FOG is never ALLOW. |
 
 Rules that never bend:
 
