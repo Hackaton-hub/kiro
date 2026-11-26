@@ -1,0 +1,29 @@
+{
+  "status": 200,
+  "weeklyDownloads": 4820000,
+  "body": {
+    "_id": "demo-healthy-lib",
+    "name": "demo-healthy-lib",
+    "description": "Fake fixture. A well-known, long-lived utility library.",
+    "dist-tags": { "latest": "4.2.1" },
+    "versions": {
+      "1.0.0": { "name": "demo-healthy-lib", "version": "1.0.0" },
+      "4.2.1": {
+        "name": "demo-healthy-lib",
+        "version": "4.2.1",
+        "main": "index.js",
+        "scripts": { "test": "vitest run" },
+        "license": "MIT"
+      }
+    },
+    "time": {
+      "created": "2014-03-12T09:00:00.000Z",
+      "1.0.0": "2014-03-12T09:00:00.000Z",
+      "4.2.1": "2026-08-03T10:30:00.000Z",
+      "modified": "2026-08-03T10:30:00.000Z"
+    },
+    "maintainers": [{ "name": "demo-maintainer", "email": "maintainer@example.invalid" }],
+    "repository": { "type": "git", "url": "git+https://example.invalid/demo-healthy-lib.git" },
+    "license": "MIT"
+  }
+}

@@ -1,5 +1,8 @@
-export const osvProvider = {
-  collect(): unknown[] {
+import type { CheckContext, PackageRef, Signal, SignalProvider } from '../types.js';
+
+export const osvProvider: SignalProvider = {
+  organ: 'osv',
+  async collect(_ref: PackageRef, _ctx: CheckContext): Promise<Signal[]> {
     return [];
   },
 };

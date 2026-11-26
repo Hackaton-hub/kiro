@@ -1,6 +1,5 @@
 import { expect, it } from 'vitest';
 import { main } from '../src/index.js';
-
-it('runs', () => {
-  expect(main()).toBe(0);
+it('runs', async () => {
+  await expect(main()).resolves.toBe(0);
 });
