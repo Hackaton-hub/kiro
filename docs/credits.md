@@ -6,3 +6,4 @@ Values are cumulative credits used since the start.
 | Date       | Juste | Cédric | Ange | Note                                   |
 |------------|-------|--------|------|----------------------------------------|
 | 2026-11-25 |       | 0.8    |      | Cédric: monorepo skeleton (IDE, vibe)  |
+| 2026-11-26 |       | 1.94   |      | Cédric: steering before/after tests (3 answers, 1.14) |
