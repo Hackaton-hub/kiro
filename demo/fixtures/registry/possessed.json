@@ -1,0 +1,26 @@
+{
+  "status": 200,
+  "weeklyDownloads": 12,
+  "body": {
+    "_id": "demo-possessed-lib",
+    "name": "demo-possessed-lib",
+    "description": "Fake fixture. A brand-new package with an install script. Harmless: it only writes a marker file.",
+    "dist-tags": { "latest": "0.0.1" },
+    "versions": {
+      "0.0.1": {
+        "name": "demo-possessed-lib",
+        "version": "0.0.1",
+        "main": "index.js",
+        "scripts": { "postinstall": "node -e \"require('fs').writeFileSync('.phantom-demo-marker','demo')\"" },
+        "license": "MIT"
+      }
+    },
+    "time": {
+      "created": "2026-11-24T08:15:00.000Z",
+      "0.0.1": "2026-11-24T08:15:00.000Z",
+      "modified": "2026-11-24T08:15:00.000Z"
+    },
+    "maintainers": [{ "name": "demo-newcomer", "email": "newcomer@example.invalid" }],
+    "license": "MIT"
+  }
+}
