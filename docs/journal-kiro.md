@@ -94,3 +94,43 @@ Proof      : docs/preuves/2026-11-26-cedric-steering-apres.png
              docs/preuves/2026-11-26-cedric-steering-apres-v2.png
              docs/preuves/2026-11-26-cedric-steering-avant.png
              docs/preuves/2026-11-26-cedric-steering-avant-2.png
+
+## 2026-11-27 · Ange · [steering]
+Goal       : Write design-theme.md so Kiro applies our visual identity and
+             tone on every surface (hook, CLI, web page), and prove the effect
+             with a before / after test.
+In Kiro    : Same prompt sent twice in fresh supervised sessions (Auto model):
+             "Write a standalone HTML page that shows the verdict card of a
+             blocked npm package demo-possessed-lib (BLOCK, POSSESSED, a
+             headline, two reasons, a suggestion). Show the code in the chat,
+             do not create files."
+             PR: [setup] steer: design theme
+Result     : BEFORE (no design-theme): generic dark grey/red palette, system
+             fonts, verdict shown by word + colour only (no icon), jargon
+             badges ("Action : BLOCK", "Diagnostic : POSSESSED"). The UI text
+             was in French (lang="fr") although langue.md requires English UI
+             text: Kiro applied "answer in French in the chat" to the page
+             content. It also invented a suggestion (demo-safe-lib) that does
+             not exist on any registry.
+             AFTER (design-theme.md loaded): English UI (lang="en"), full
+             Halloween palette (Night background, Blood for BLOCK, Pumpkin for
+             POSSESSED), Creepster requested for the 40px headline (not
+             rendered yet: the font file is not self-hosted), JetBrains Mono for package
+             names, Night text on colored badges with a code comment quoting
+             that rule, word + icon on the verdict badge, a humorous headline
+             with factual reasons, and the "Did you mean / Fix" lines of the
+             hook template. No CDN font link, as the charter requires.
+             Still wrong: the suggestion (demo-living-lib) is again invented,
+             and the reasons (lookalike + young) would give REVIEW, not BLOCK,
+             under the Judge rules. Both belong to the Judge, not to design.
+Measure    : 0.99 credits in total (0.19 before, 0.80 for writing the
+             charter and the after test) · 3 prompts · 2 lines added by hand
+             (Night text on colored fills, self-hosted fonts)
+Surprise   : While writing the charter, Kiro checked the contrast of every
+             palette color against the background on its own, with a small
+             Python script, and wrote the ratios into the file. We had only
+             asked for "contrast >= 4.5:1". It did not check text on colored
+             fills, which fails; we added that rule by hand.
+Proof      : docs/preuves/2026-11-27-ange-design-avant.png
+             docs/preuves/2026-11-27-ange-design-apres.png
+             docs/preuves/2026-11-27-ange-design-contraste.png
