@@ -7,4 +7,3 @@ Values are cumulative credits used since the start.
 |------------|-------|--------|------|----------------------------------------|
 | 2026-11-25 | 1.64  | 0.8    |      | Cédric: monorepo skeleton (IDE, vibe) · Juste: contract providers, judge, fixtures (IDE, 5 prompts) |
 | 2026-11-26 |       | 1.94   |      | Cédric: steering before/after tests (3 answers, 1.14) |
-| 2026-11-27 |       |        | 0.99 | Ange: design-theme steering + before/after test (3 prompts) |
