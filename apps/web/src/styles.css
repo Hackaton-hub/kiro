@@ -1,0 +1,157 @@
+:root {
+  --night: #1a1024;
+  --mist: #eee8f4;
+  --pumpkin: #e8772e;
+  --ectoplasm: #6ee7a8;
+  --candle: #f2c14e;
+  --blood: #ff5c6c;
+  --font-text: system-ui, sans-serif;
+  --font-mono: ui-monospace, monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--night);
+  color: var(--mist);
+  font-family: var(--font-text);
+  line-height: 1.5;
+}
+
+main {
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  color: var(--pumpkin);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
+
+.summon {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.summon label {
+  flex-basis: 100%;
+}
+
+.summon input {
+  flex: 1 1 12rem;
+  padding: 0.5rem;
+  border: 2px solid var(--mist);
+  border-radius: 0.25rem;
+  background: var(--night);
+  color: var(--mist);
+  font-size: 1rem;
+}
+
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+button {
+  padding: 0.5rem 0.9rem;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--mist);
+  outline-offset: 2px;
+}
+
+/* Text on any colored fill is always Night (design-theme contrast rule). */
+.fill-pumpkin,
+.fill-ectoplasm,
+.fill-candle,
+.fill-blood {
+  color: var(--night);
+}
+
+.fill-pumpkin {
+  background: var(--pumpkin);
+}
+
+.fill-ectoplasm {
+  background: var(--ectoplasm);
+}
+
+.fill-candle {
+  background: var(--candle);
+}
+
+.fill-blood {
+  background: var(--blood);
+}
+
+/* The verdict color wins in the headline (design-theme). All four pass 4.5:1 on Night. */
+.text-pumpkin {
+  color: var(--pumpkin);
+}
+
+.text-ectoplasm {
+  color: var(--ectoplasm);
+}
+
+.text-candle {
+  color: var(--candle);
+}
+
+.text-blood {
+  color: var(--blood);
+}
+
+.card {
+  padding: 1rem;
+  border: 2px solid var(--mist);
+  border-radius: 0.5rem;
+}
+
+.card-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge,
+.tag {
+  padding: 0.15rem 0.6rem;
+  border: 2px solid transparent;
+  border-radius: 0.25rem;
+  font-weight: 700;
+}
+
+.reasons {
+  padding-left: 1.25rem;
+}
+
+.suggestion {
+  margin-top: 0.5rem;
+}
+
+/* Fills disappear in forced-colors mode, so keep a visible border. */
+@media (forced-colors: active) {
+  .badge,
+  .tag,
+  button {
+    border: 2px solid ButtonText;
+  }
+}

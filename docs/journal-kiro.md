@@ -134,3 +134,42 @@ Surprise   : While writing the charter, Kiro checked the contrast of every
 Proof      : docs/preuves/2026-11-27-ange-design-avant.png
              docs/preuves/2026-11-27-ange-design-apres.png
              docs/preuves/2026-11-27-ange-design-contraste.png
+
+## 2026-11-28 · Ange · [spec · PBT]
+Goal       : Build milestone 1 of the autopsy page (S8): a verdict card for the
+             three demo packages, read from local files, with no network call
+             in demo mode.
+In Kiro    : Spec mode ("Build a Feature", requirements first), Supervised, Auto
+             model. requirements.md, design.md and tasks.md generated, then each
+             reviewed and fixed with one targeted prompt (normalize and fonts
+             moved to milestone 2, ALLOW may have 0 reasons, vite/client types,
+             happy-dom per test file). Tasks run one at a time with
+             "Execute only task X.Y, no sub-agent", up to the checkpoint (task 6).
+             PR: [S8] feat: autopsy page v1 (verdict card from demo fixtures)
+Result     : apps/web shows the summon form, three example buttons and the
+             verdict card (word + icon + color, diagnosis tag, headline in the
+             verdict color, reasons, "Did you mean" suggestion). All text goes
+             through textContent. 65 tests pass, including two property tests:
+             Property 1 submits 200 random strings through the real form with
+             fetch stubbed and checks fetch is never called (I6); Property 2
+             checks that REVIEW and BLOCK always show at least one reason (I8).
+             Found in code review, not by the spec or the tests: render() rebuilt
+             the whole page, so the input was emptied after each search and the
+             live region was recreated. Fixed with one prompt. Also by review:
+             a missing "exactly 1 reason" test for healthy, the headline not in
+             the verdict color, and pnpm lint skipping apps/*/test.
+             Kiro started sub-agents on its own for task 2 (one per demo file);
+             one of them reported a typo in vite-env.d.ts that did not exist.
+Measure    : 25.21 credits for S8 (requirements 3.92, design + tasks 5.75,
+             implementation 15.54; task 2 alone 3.04 with sub-agents) · about
+             15 prompts · 0 lines of app code written by hand
+Surprise   : While writing the task list, Kiro flagged on its own that its
+             requirements contradicted our contract: requirement 1.7 asked for
+             1 to 3 reasons in every demo verdict, but the Judge returns no
+             reason for ALLOW (I8 only applies to REVIEW and BLOCK). We kept 1
+             reason for the healthy demo file and the guard accepts 0.
+Proof      : docs/preuves/2026-11-28-ange-s8-kiro-tasks.png
+             docs/preuves/2026-11-28-ange-s8-empty.png
+             docs/preuves/2026-11-28-ange-s8-healthy.png
+             docs/preuves/2026-11-28-ange-s8-ghost.png
+             docs/preuves/2026-11-28-ange-s8-possessed.png
