@@ -168,7 +168,11 @@ Surprise   : While writing the task list, Kiro flagged on its own that its
              1 to 3 reasons in every demo verdict, but the Judge returns no
              reason for ALLOW (I8 only applies to REVIEW and BLOCK). We kept 1
              reason for the healthy demo file and the guard accepts 0.
-Proof      : docs/preuves/2026-11-28-ange-s8-kiro-tasks.png
+Proof      : docs/preuves/2026-11-27-ange-s8-spec-requirements.png
+             docs/preuves/2026-11-27-ange-s8-spec-requirements-fix.png
+             docs/preuves/2026-11-27-ange-s8-spec-design.png
+             docs/preuves/2026-11-27-ange-s8-spec-tasks.png
+             docs/preuves/2026-11-28-ange-s8-kiro-tasks.png
              docs/preuves/2026-11-28-ange-s8-empty.png
              docs/preuves/2026-11-28-ange-s8-healthy.png
              docs/preuves/2026-11-28-ange-s8-ghost.png
