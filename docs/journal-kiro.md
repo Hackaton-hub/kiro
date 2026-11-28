@@ -134,3 +134,33 @@ Surprise   : While writing the charter, Kiro checked the contrast of every
 Proof      : docs/preuves/2026-11-27-ange-design-avant.png
              docs/preuves/2026-11-27-ange-design-apres.png
              docs/preuves/2026-11-27-ange-design-contraste.png
+
+
+## 2026-11-27 · Cédric · [spec · PBT]
+Goal       : Implement normalize(ecosystem, name) from section 5 of the contract,
+             with property-based tests, to unblock Juste (Grimoire hashes).
+In Kiro    : Spec "s1-normalize" (Build a Feature, supervised): requirements →
+             design → tasks, each reviewed before approval. Then tasks run one by
+             one with Start task.
+Result     : requirements.md: 5 requirements in EARS format. One error caught at
+             review: criterion 5.2 said re_quests and re.quests normalize to
+             "requests", which is wrong under PEP 503 ("re-quests"). Fixed with one
+             message, before any code was written.
+             design.md: 8 correctness properties; `name: unknown` so the non-string
+             guard is really tested.
+             Code accepted without changes. 21 unit tests + 10 property tests.
+             pnpm test: 46/46 passed; pnpm lint: no errors.
+Measure    : 15.32 credits (spec 7.36, code + tests 7.96) · 1h23 · 1 spec fix ·
+             0 code fixes
+Surprise   : 1) Kiro started a sub-agent on its own ("feature-requirements-first-
+             workflow"), which listed the folder and wrote .config.kiro before the
+             requirements.
+             2) Kiro marked the test tasks as optional (*) and said the final
+             checkpoint was "ready" without running any test. We ran them anyway.
+             3) No property test failed: the code was written from the design's
+             properties (it even re-trims "so the output does not change on a
+             second pass"). Here the spec prevented the bug instead of PBT finding it.
+             4) Kiro read our .local/ notes file, even though Git ignores it.
+Proof      : docs/preuves/2026-11-27-cedric-steering-included.png
+             docs/preuves/2026-11-27-cedric-spec-subagent.png
+             docs/preuves/2026-11-27-cedric-normalize-spec.png
