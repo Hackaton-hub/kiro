@@ -1,0 +1,56 @@
+{
+  "contractVersion": "1.0.0",
+  "package": {
+    "ecosystem": "npm",
+    "name": "demo-possessed-lib",
+    "normalizedName": "demo-possessed-lib",
+    "version": "1.0.0",
+    "source": "web"
+  },
+  "action": "BLOCK",
+  "diagnosis": "POSSESSED",
+  "headline": "Possessed: this package runs code the moment you install it.",
+  "reasons": [
+    "Its install script runs automatically when the package is installed.",
+    "That script also opens a network connection to an unknown host."
+  ],
+  "signals": [
+    {
+      "id": "eye.install_script",
+      "organ": "eye",
+      "strength": "strong",
+      "summary": "The package runs an install script automatically after download.",
+      "evidence": [
+        {
+          "label": "postinstall script",
+          "value": "scripts/postinstall.js:3",
+          "source": "demo/fixtures/eye/demo-possessed-lib/package.json",
+          "observedAt": "2026-11-27T10:00:00.000Z"
+        }
+      ]
+    },
+    {
+      "id": "eye.network",
+      "organ": "eye",
+      "strength": "strong",
+      "summary": "The install script contacts a remote host.",
+      "evidence": [
+        {
+          "label": "network call",
+          "value": "scripts/postinstall.js:7",
+          "source": "demo/fixtures/eye/demo-possessed-lib/scripts/postinstall.js",
+          "observedAt": "2026-11-27T10:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "seams": [
+    {
+      "organ": "eye",
+      "worlds": ["static code analysis", "package install scripts"]
+    }
+  ],
+  "policyVersion": "0.1.0",
+  "checkedAt": "2026-11-27T10:00:00.000Z",
+  "demo": true
+}

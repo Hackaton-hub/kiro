@@ -1,0 +1,50 @@
+{
+  "contractVersion": "1.0.0",
+  "package": {
+    "ecosystem": "npm",
+    "name": "demo-ghost-lib",
+    "normalizedName": "demo-ghost-lib",
+    "source": "web"
+  },
+  "action": "BLOCK",
+  "diagnosis": "GHOST",
+  "headline": "Ghost detected: this package does not exist on npm.",
+  "reasons": [
+    "demo-ghost-lib is not published on the npm registry.",
+    "An attacker could publish malicious code under this name."
+  ],
+  "suggestion": {
+    "name": "demo-healthy-lib",
+    "reason": "A real, healthy package with a similar name.",
+    "from": "name"
+  },
+  "signals": [
+    {
+      "id": "registry.not_found",
+      "organ": "registry",
+      "strength": "decisive",
+      "summary": "The package demo-ghost-lib does not exist on the npm registry.",
+      "evidence": [
+        {
+          "label": "registry response",
+          "value": "404 Not found",
+          "source": "demo/fixtures/registry/ghost.json",
+          "observedAt": "2026-11-27T10:00:00.000Z"
+        }
+      ]
+    }
+  ],
+  "seams": [
+    {
+      "organ": "registry",
+      "worlds": ["AI agent install commands", "package registries"]
+    },
+    {
+      "organ": "name",
+      "worlds": ["spelling distance", "package registries"]
+    }
+  ],
+  "policyVersion": "0.1.0",
+  "checkedAt": "2026-11-27T10:00:00.000Z",
+  "demo": true
+}

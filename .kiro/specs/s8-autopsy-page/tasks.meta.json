@@ -1,0 +1,192 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Set up apps/web": [
+      {
+        "executionId": "219e41b5-42be-407b-8529-37dee2d7a385",
+        "chatSessionId": "sess_dcf48978-4f19-49c1-aa7a-314b7057769f",
+        "timestamp": 1795819540338
+      },
+      {
+        "executionId": "64a93638-22ac-4979-9434-04f9786cbfaa",
+        "chatSessionId": "sess_3e3fd615-0d50-4b28-86ab-7ff3cebf2a37",
+        "timestamp": 1795828997003
+      }
+    ],
+    "1.1 Add dependencies and update the lockfile": [
+      {
+        "executionId": "219e41b5-42be-407b-8529-37dee2d7a385",
+        "chatSessionId": "sess_dcf48978-4f19-49c1-aa7a-314b7057769f",
+        "timestamp": 1795819543814
+      },
+      {
+        "executionId": "64a93638-22ac-4979-9434-04f9786cbfaa",
+        "chatSessionId": "sess_3e3fd615-0d50-4b28-86ab-7ff3cebf2a37",
+        "timestamp": 1795828997186
+      }
+    ],
+    "1.2 Add `vite-env.d.ts` and fix `index.html`": [
+      {
+        "executionId": "219e41b5-42be-407b-8529-37dee2d7a385",
+        "chatSessionId": "sess_dcf48978-4f19-49c1-aa7a-314b7057769f",
+        "timestamp": 1795819544454
+      },
+      {
+        "executionId": "219e41b5-42be-407b-8529-37dee2d7a385",
+        "chatSessionId": "sess_dcf48978-4f19-49c1-aa7a-314b7057769f",
+        "timestamp": 1795819834759
+      }
+    ],
+    "2.1 Write `npm__demo-healthy-lib.json`": [
+      {
+        "executionId": "64a93638-22ac-4979-9434-04f9786cbfaa",
+        "chatSessionId": "sess_3e3fd615-0d50-4b28-86ab-7ff3cebf2a37",
+        "timestamp": 1795828997453
+      },
+      {
+        "executionId": "64a93638-22ac-4979-9434-04f9786cbfaa",
+        "chatSessionId": "sess_3e3fd615-0d50-4b28-86ab-7ff3cebf2a37",
+        "timestamp": 1795829101977
+      }
+    ],
+    "2.2 Write `npm__demo-ghost-lib.json`": [
+      {
+        "executionId": "64a93638-22ac-4979-9434-04f9786cbfaa",
+        "chatSessionId": "sess_3e3fd615-0d50-4b28-86ab-7ff3cebf2a37",
+        "timestamp": 1795828997643
+      },
+      {
+        "executionId": "64a93638-22ac-4979-9434-04f9786cbfaa",
+        "chatSessionId": "sess_3e3fd615-0d50-4b28-86ab-7ff3cebf2a37",
+        "timestamp": 1795829102158
+      }
+    ],
+    "2.3 Write `npm__demo-possessed-lib.json`": [
+      {
+        "executionId": "64a93638-22ac-4979-9434-04f9786cbfaa",
+        "chatSessionId": "sess_3e3fd615-0d50-4b28-86ab-7ff3cebf2a37",
+        "timestamp": 1795828997814
+      },
+      {
+        "executionId": "64a93638-22ac-4979-9434-04f9786cbfaa",
+        "chatSessionId": "sess_3e3fd615-0d50-4b28-86ab-7ff3cebf2a37",
+        "timestamp": 1795829102706
+      }
+    ],
+    "2. Create the demo verdict files in `demo/verdicts/`": [
+      {
+        "executionId": "64a93638-22ac-4979-9434-04f9786cbfaa",
+        "chatSessionId": "sess_3e3fd615-0d50-4b28-86ab-7ff3cebf2a37",
+        "timestamp": 1795829102846
+      }
+    ],
+    "3.1 Implement `apps/web/src/demoStore.ts`": [
+      {
+        "executionId": "4bb4866d-6309-4ed6-9053-49c53dd46f01",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795829412216
+      },
+      {
+        "executionId": "4bb4866d-6309-4ed6-9053-49c53dd46f01",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795829473967
+      }
+    ],
+    "3.2 Write unit tests in `apps/web/test/demoStore.test.ts`": [
+      {
+        "executionId": "4bb4866d-6309-4ed6-9053-49c53dd46f01",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795829474514
+      },
+      {
+        "executionId": "4bb4866d-6309-4ed6-9053-49c53dd46f01",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795829551352
+      }
+    ],
+    "3. Implement the demo store": [
+      {
+        "executionId": "4bb4866d-6309-4ed6-9053-49c53dd46f01",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795829551499
+      }
+    ],
+    "4.1 Implement `apps/web/src/verdictView.ts`": [
+      {
+        "executionId": "93283271-ac41-4659-9f60-da9c4618125a",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795829972280
+      }
+    ],
+    "4.2 Write unit tests in `apps/web/test/verdictView.test.ts`": [
+      {
+        "executionId": "9739503a-02f5-4795-a2e4-55cd53c0b941",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795830419033
+      }
+    ],
+    "4.3 Write property test for non-ALLOW reasons": [
+      {
+        "executionId": "4657a3a2-f28b-4fca-b7d0-a5e389e9ae44",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795830496603
+      }
+    ],
+    "4. Implement the view model": [
+      {
+        "executionId": "4657a3a2-f28b-4fca-b7d0-a5e389e9ae44",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795830496823
+      }
+    ],
+    "5.1 Implement `apps/web/src/render.ts`": [
+      {
+        "executionId": "e13f84c1-3d61-4abf-bfae-16cdc2450d19",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795830704013
+      }
+    ],
+    "5.2 Implement `apps/web/src/styles.css`": [
+      {
+        "executionId": "ead8a7ea-45c3-463e-9520-0c183e83b219",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795831014599
+      }
+    ],
+    "5.3 Implement `apps/web/src/main.ts`": [
+      {
+        "executionId": "6f330c5e-537e-42f4-8051-43a94ab4e8f0",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795831198188
+      }
+    ],
+    "5.4 Write render and smoke tests": [
+      {
+        "executionId": "17f18b6a-f246-4f73-9de1-f709b810a53f",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795831338654
+      }
+    ],
+    "5.5 Write property test for demo mode isolation": [
+      {
+        "executionId": "17f18b6a-f246-4f73-9de1-f709b810a53f",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795831339018
+      }
+    ],
+    "5. Implement rendering and wiring": [
+      {
+        "executionId": "17f18b6a-f246-4f73-9de1-f709b810a53f",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795831339122
+      }
+    ],
+    "6. **END OF MILESTONE 1: checkpoint**": [
+      {
+        "executionId": "db089e37-7249-449f-a9a3-f85a2427c47b",
+        "chatSessionId": "sess_150bfac4-5f3c-41ab-a6db-ef6ac5015e01",
+        "timestamp": 1795831784946
+      }
+    ]
+  }
+}

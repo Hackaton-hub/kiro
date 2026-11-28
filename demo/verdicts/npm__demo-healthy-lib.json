@@ -1,0 +1,25 @@
+{
+  "contractVersion": "1.0.0",
+  "package": {
+    "ecosystem": "npm",
+    "name": "demo-healthy-lib",
+    "normalizedName": "demo-healthy-lib",
+    "source": "web"
+  },
+  "action": "ALLOW",
+  "diagnosis": "LIVING",
+  "headline": "Healthy package: demo-healthy-lib is safe to install.",
+  "reasons": [
+    "It exists on npm and no known problem was found."
+  ],
+  "signals": [],
+  "seams": [
+    {
+      "organ": "registry",
+      "worlds": ["package registries", "install-time safety checks"]
+    }
+  ],
+  "policyVersion": "0.1.0",
+  "checkedAt": "2026-11-27T10:00:00.000Z",
+  "demo": true
+}
